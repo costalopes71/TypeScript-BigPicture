@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CustomerService = void 0;
 class GenericService {
 }
 class CustomerService extends GenericService {
@@ -25,9 +27,10 @@ class CustomerService extends GenericService {
         console.log(dataToLog);
     }
 }
-class CustomCustomerService extends CustomerService {
-    customMethod() {
-        this.changeCustomerAge(90); // inherited method
-        console.log("inherited method called");
-    }
-}
+exports.CustomerService = CustomerService;
+// class CustomCustomerService extends CustomerService {
+//     public customMethod(): void {
+//         this.changeCustomerAge(90); // inherited method
+//         console.log("inherited method called")
+//     }
+// }

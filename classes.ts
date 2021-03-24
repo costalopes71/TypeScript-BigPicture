@@ -4,7 +4,7 @@ abstract class GenericService {
 
 }
 
-class CustomerService extends GenericService {
+export class CustomerService extends GenericService {
 
     // by default access modifiers are PUBLIC
 
@@ -41,11 +41,11 @@ class CustomerService extends GenericService {
 
 }
 
-class CustomCustomerService extends CustomerService {
+// class CustomCustomerService extends CustomerService {
 
-    public customMethod(): void {
-        this.changeCustomerAge(90); // inherited method
-        console.log("inherited method called")
-    }
+//     public customMethod(): void {
+//         this.changeCustomerAge(90); // inherited method
+//         console.log("inherited method called")
+//     }
 
-}
+// }
